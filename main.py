@@ -24,10 +24,11 @@ def get_buienradar_data():
         response.raise_for_status()  # raises exception for HTTP errors
 
         data = response.json()  # convert JSON to Python dict
+        logger.info("Successfully fetched Buienradar data.")
         return data
 
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching Buienradar data: {e}")
+        logger.error(f"Error fetching Buienradar data: {e}")
         return None
 
 
@@ -66,6 +67,7 @@ def setup_database(conn):
         )
     """)
     conn.commit()
+    logger.info("Database tables created.")
 
 # Step 2: Insert or update stations
 def insert_stations(conn, data):
@@ -90,7 +92,7 @@ def insert_stations(conn, data):
         ))
 
     conn.commit()
-    print(f"✅ Inserted/updated {len(stations)} stations.")
+    logger.info(f"Inserted/updated {len(stations)} stations.")
 
 # Step 3: Insert measurements linked by stationid
 def insert_measurements(conn, data):
@@ -117,14 +119,17 @@ def insert_measurements(conn, data):
         ))
 
     conn.commit()
-    print(f"✅ Inserted {len(stations)} station measurements.")
+    logger.info(f"Inserted {len(stations)} station measurements.")
 
 # Main execution
 if __name__ == "__main__":
     data = get_buienradar_data()
-    conn = get_connection()
-    setup_database(conn)
-    insert_stations(conn, data)
-    insert_measurements(conn, data)
-    conn.close()
-    print("🏁 Done.")
+    if data:
+        conn = get_connection()
+        setup_database(conn)
+        insert_stations(conn, data)
+        insert_measurements(conn, data)
+        conn.close()
+        logger.info("All data processing completed successfully.")
+    else:
+        logger.warning("No data fetched. Exiting script.")
