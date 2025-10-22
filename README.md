@@ -132,6 +132,10 @@ Note: if you are not sure how to create a local database, store the data in a fo
 **Question 4:**
 Create an ERD  of the SQL database you created. Tip: you can use [draw.io](https://app.diagrams.net/) for making the diagram.
 
+<br/><br/>
+**The answer to those questions can be found on the scripts folder and on the main.py code. The database can be found on the root directory "buienradar_weather.db" And finally the ERD diagram can be found under the design folder "database_erd.drawio.png".**
+<br/><br/>
+
 ---
 
 ## Part 2: Data Analysis
@@ -152,6 +156,10 @@ What is the station with the biggest difference between feel temperature and the
 **Question 8:**
 Which weather station is located in the North Sea?
 
+<br/><br/>
+**The answer to those questions can be found on the analysis and sql folders and on the analysis.ipynb notebook using the underlying code.**
+<br/><br/>
+
 ---
 
 ## Part 3: Automation or Data Visualization
@@ -166,6 +174,11 @@ Describe how you would automate the population of the database with all measurem
 In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 20 minutes.
 
 Feel free to use a flowchat to show the steps of your approach.
+
+<br/><br/>
+**The answer to this question is in the flowchart in the design folder "Automation_Flowchart.drawio.png".**
+<br/><br/>
+
 
 **Question 9B: Data Visualization**
 
