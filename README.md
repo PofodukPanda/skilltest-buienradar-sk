@@ -184,4 +184,10 @@ Feel free to use a flowchat to show the steps of your approach.
 
 Visualize your analysis of part 2. You can choose between a data visualization tool which you are familiar with and you see fit. It can also be a visualization library in Python or JavaScripts for example. 
 
+
+<br/><br/>
+**The answer to this question is in the analysis folder as a notebook "visualisation.ipynb" and as a html geomap with the Station and temperature as datapoint "station_map.html". This was an ongoing step and it is not finalized by lack of time on my side**
+<br/><br/>
+
+
 Bonuspoints if you manage to do both!
