@@ -1,6 +1,7 @@
 import sqlite3
 import requests
 import logging
+from helper import get_connection
 
 
 # Setup Logging
@@ -10,12 +11,6 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 logger = logging.getLogger(__name__)
-
-# Helper function to create a connection with always foreign keys enabled
-def get_connection(db_name="buienradar_weather.db"):
-    conn = sqlite3.connect(db_name)
-    conn.execute("PRAGMA foreign_keys = ON;")
-    return conn
 
 def get_buienradar_data():
     url = "https://json.buienradar.nl/"
