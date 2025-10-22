@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba6337108e24812a76e33054f1a52ee8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba6337108e24812a76e33054f1a52ee8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba6337108e24812a76e33054f1a52ee8 = L.map(
+                "map_ba6337108e24812a76e33054f1a52ee8",
+                {
+                    center: [52.0, 5.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_50476bd6e03bfbd897fc0392abfd8e45 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_50476bd6e03bfbd897fc0392abfd8e45.addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+            var circle_marker_c166ed55a3fd155c41bfa3ba4fbf1ac4 = L.circleMarker(
+                [51.5, 6.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_931597b38d1342d5e2f3826772e887fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1abff468940c0ae615168293930d3308 = $(`<div id="html_1abff468940c0ae615168293930d3308" style="width: 100.0%; height: 100.0%;">Meetstation Arcen: 15.0°C</div>`)[0];
+                popup_931597b38d1342d5e2f3826772e887fa.setContent(html_1abff468940c0ae615168293930d3308);
+            
+        
+
+        circle_marker_c166ed55a3fd155c41bfa3ba4fbf1ac4.bindPopup(popup_931597b38d1342d5e2f3826772e887fa)
+        ;
+
+        
+    
+    
+            var circle_marker_f04f399984c6b4d629333a54f77e978a = L.circleMarker(
+                [52.07, 5.88],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_3cb936832a5c4d1478f1983c71b1fd38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dd566363e4117375d5d9e8e46d3ab07 = $(`<div id="html_3dd566363e4117375d5d9e8e46d3ab07" style="width: 100.0%; height: 100.0%;">Meetstation Arnhem: 14.3°C</div>`)[0];
+                popup_3cb936832a5c4d1478f1983c71b1fd38.setContent(html_3dd566363e4117375d5d9e8e46d3ab07);
+            
+        
+
+        circle_marker_f04f399984c6b4d629333a54f77e978a.bindPopup(popup_3cb936832a5c4d1478f1983c71b1fd38)
+        ;
+
+        
+    
+    
+            var circle_marker_258703a898a124820843cc1bb42c6d81 = L.circleMarker(
+                [52.65, 4.98],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_e06b72d0c5dcbf20b0e96e1ee6f82e7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8a5d48bbec69c6063a9df2f3f0b8747 = $(`<div id="html_f8a5d48bbec69c6063a9df2f3f0b8747" style="width: 100.0%; height: 100.0%;">Meetstation Berkhout: 14.5°C</div>`)[0];
+                popup_e06b72d0c5dcbf20b0e96e1ee6f82e7a.setContent(html_f8a5d48bbec69c6063a9df2f3f0b8747);
+            
+        
+
+        circle_marker_258703a898a124820843cc1bb42c6d81.bindPopup(popup_e06b72d0c5dcbf20b0e96e1ee6f82e7a)
+        ;
+
+        
+    
+    
+            var circle_marker_677966c1d2cc5f4cb6d68572197aae87 = L.circleMarker(
+                [52.1, 5.18],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_df974baff174d04940aa83197ee06be4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7597516efcbac0e065f7557d56866b7 = $(`<div id="html_d7597516efcbac0e065f7557d56866b7" style="width: 100.0%; height: 100.0%;">Meetstation De Bilt: 14.3°C</div>`)[0];
+                popup_df974baff174d04940aa83197ee06be4.setContent(html_d7597516efcbac0e065f7557d56866b7);
+            
+        
+
+        circle_marker_677966c1d2cc5f4cb6d68572197aae87.bindPopup(popup_df974baff174d04940aa83197ee06be4)
+        ;
+
+        
+    
+    
+            var circle_marker_85e1b6cccb8ab5c3a667600faeaed9b9 = L.circleMarker(
+                [52.92, 4.78],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_331780dd95eb5353098ea8c2b90c0c6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddd3a5d78c076bf8ec3527cc56b889e9 = $(`<div id="html_ddd3a5d78c076bf8ec3527cc56b889e9" style="width: 100.0%; height: 100.0%;">Meetstation Den Helder: 14.2°C</div>`)[0];
+                popup_331780dd95eb5353098ea8c2b90c0c6b.setContent(html_ddd3a5d78c076bf8ec3527cc56b889e9);
+            
+        
+
+        circle_marker_85e1b6cccb8ab5c3a667600faeaed9b9.bindPopup(popup_331780dd95eb5353098ea8c2b90c0c6b)
+        ;
+
+        
+    
+    
+            var circle_marker_ae9589c2f3daeea22ab5bec1fceca944 = L.circleMarker(
+                [51.45, 5.42],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_27fff55a134f55d9f9aa72931a565955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ed27556e738da254b8f7935288c2fc8 = $(`<div id="html_0ed27556e738da254b8f7935288c2fc8" style="width: 100.0%; height: 100.0%;">Meetstation Eindhoven: 15.4°C</div>`)[0];
+                popup_27fff55a134f55d9f9aa72931a565955.setContent(html_0ed27556e738da254b8f7935288c2fc8);
+            
+        
+
+        circle_marker_ae9589c2f3daeea22ab5bec1fceca944.bindPopup(popup_27fff55a134f55d9f9aa72931a565955)
+        ;
+
+        
+    
+    
+            var circle_marker_e0bd72b77126e1b1caac6c1a41387b60 = L.circleMarker(
+                [51.2, 5.77],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_70d2dd9af120323087210ed4f4a10dd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b9272b196a33e7938d2f9a8cdf178b6 = $(`<div id="html_3b9272b196a33e7938d2f9a8cdf178b6" style="width: 100.0%; height: 100.0%;">Meetstation Ell: 15.0°C</div>`)[0];
+                popup_70d2dd9af120323087210ed4f4a10dd9.setContent(html_3b9272b196a33e7938d2f9a8cdf178b6);
+            
+        
+
+        circle_marker_e0bd72b77126e1b1caac6c1a41387b60.bindPopup(popup_70d2dd9af120323087210ed4f4a10dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_92b54ac01d78dd64c7c2b6d1443142bc = L.circleMarker(
+                [51.57, 4.93],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_7e52f4153086d86e1e8ac8d11d5528ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7025d27c174d055d36862a414c5641de = $(`<div id="html_7025d27c174d055d36862a414c5641de" style="width: 100.0%; height: 100.0%;">Meetstation Gilze Rijen: 14.7°C</div>`)[0];
+                popup_7e52f4153086d86e1e8ac8d11d5528ab.setContent(html_7025d27c174d055d36862a414c5641de);
+            
+        
+
+        circle_marker_92b54ac01d78dd64c7c2b6d1443142bc.bindPopup(popup_7e52f4153086d86e1e8ac8d11d5528ab)
+        ;
+
+        
+    
+    
+            var circle_marker_56d3ba98b77f9279f30d9c36b1e745e9 = L.circleMarker(
+                [51.53, 3.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_ea3ec518a31938848bb4e8c3a7eb2522 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fcde1c4a2e93e43ceb11eef1097cf9e = $(`<div id="html_8fcde1c4a2e93e43ceb11eef1097cf9e" style="width: 100.0%; height: 100.0%;">Meetstation Goes: 14.9°C</div>`)[0];
+                popup_ea3ec518a31938848bb4e8c3a7eb2522.setContent(html_8fcde1c4a2e93e43ceb11eef1097cf9e);
+            
+        
+
+        circle_marker_56d3ba98b77f9279f30d9c36b1e745e9.bindPopup(popup_ea3ec518a31938848bb4e8c3a7eb2522)
+        ;
+
+        
+    
+    
+            var circle_marker_34a18448f3be8fd2a6c022e7e28cf755 = L.circleMarker(
+                [52.07, 6.65],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_b75b244550d2539f6de63c8e63de2a8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e789c9c6881d3c564efe05a3bb907b9 = $(`<div id="html_2e789c9c6881d3c564efe05a3bb907b9" style="width: 100.0%; height: 100.0%;">Meetstation Groenlo-Hupsel: 14.4°C</div>`)[0];
+                popup_b75b244550d2539f6de63c8e63de2a8b.setContent(html_2e789c9c6881d3c564efe05a3bb907b9);
+            
+        
+
+        circle_marker_34a18448f3be8fd2a6c022e7e28cf755.bindPopup(popup_b75b244550d2539f6de63c8e63de2a8b)
+        ;
+
+        
+    
+    
+            var circle_marker_b459f88599a5d0b596f7ca4d2e463ca0 = L.circleMarker(
+                [53.13, 6.58],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_b8a29b12adf81dd9e69561f46f47b43b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97854b33e152a0540fe07f29e8bf4f4b = $(`<div id="html_97854b33e152a0540fe07f29e8bf4f4b" style="width: 100.0%; height: 100.0%;">Meetstation Groningen: 14.5°C</div>`)[0];
+                popup_b8a29b12adf81dd9e69561f46f47b43b.setContent(html_97854b33e152a0540fe07f29e8bf4f4b);
+            
+        
+
+        circle_marker_b459f88599a5d0b596f7ca4d2e463ca0.bindPopup(popup_b8a29b12adf81dd9e69561f46f47b43b)
+        ;
+
+        
+    
+    
+            var circle_marker_d9779df338d9647cc1518d601e2c79c0 = L.circleMarker(
+                [52.43, 6.27],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_a9af5670068d483e948f393ce472a095 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f9a1faa16bdc49cbb13fcbad959fb2d = $(`<div id="html_3f9a1faa16bdc49cbb13fcbad959fb2d" style="width: 100.0%; height: 100.0%;">Meetstation Heino: 14.5°C</div>`)[0];
+                popup_a9af5670068d483e948f393ce472a095.setContent(html_3f9a1faa16bdc49cbb13fcbad959fb2d);
+            
+        
+
+        circle_marker_d9779df338d9647cc1518d601e2c79c0.bindPopup(popup_a9af5670068d483e948f393ce472a095)
+        ;
+
+        
+    
+    
+            var circle_marker_410100ab63c5e2e4eabd8ec318e5cff2 = L.circleMarker(
+                [51.87, 5.15],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_02a796802843f4b080352d22a19c95fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ddaec851c4a3a0474b4e6b671df45c5 = $(`<div id="html_3ddaec851c4a3a0474b4e6b671df45c5" style="width: 100.0%; height: 100.0%;">Meetstation Herwijnen: 15.0°C</div>`)[0];
+                popup_02a796802843f4b080352d22a19c95fb.setContent(html_3ddaec851c4a3a0474b4e6b671df45c5);
+            
+        
+
+        circle_marker_410100ab63c5e2e4eabd8ec318e5cff2.bindPopup(popup_02a796802843f4b080352d22a19c95fb)
+        ;
+
+        
+    
+    
+            var circle_marker_305c97084c21dc7d17fd37a92fcc0a5e = L.circleMarker(
+                [51.98, 4.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_bdf3550c5b19e87cb8c393f61b13f2e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d632edaf71e3a7a2f2a91c4dc73be597 = $(`<div id="html_d632edaf71e3a7a2f2a91c4dc73be597" style="width: 100.0%; height: 100.0%;">Meetstation Hoek van Holland: 14.6°C</div>`)[0];
+                popup_bdf3550c5b19e87cb8c393f61b13f2e8.setContent(html_d632edaf71e3a7a2f2a91c4dc73be597);
+            
+        
+
+        circle_marker_305c97084c21dc7d17fd37a92fcc0a5e.bindPopup(popup_bdf3550c5b19e87cb8c393f61b13f2e8)
+        ;
+
+        
+    
+    
+            var circle_marker_b6cd1c097b3eb397e9a8b129c702be1e = L.circleMarker(
+                [52.73, 6.52],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_7e54f104f97ff0c6511e60229e2de96a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55d31e75a4f7abdd931d4586ee6bd02f = $(`<div id="html_55d31e75a4f7abdd931d4586ee6bd02f" style="width: 100.0%; height: 100.0%;">Meetstation Hoogeveen: 14.5°C</div>`)[0];
+                popup_7e54f104f97ff0c6511e60229e2de96a.setContent(html_55d31e75a4f7abdd931d4586ee6bd02f);
+            
+        
+
+        circle_marker_b6cd1c097b3eb397e9a8b129c702be1e.bindPopup(popup_7e54f104f97ff0c6511e60229e2de96a)
+        ;
+
+        
+    
+    
+            var circle_marker_a73210fcdcba06f3bf93ec15d08a50b4 = L.circleMarker(
+                [53.38, 5.35],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_a50900428c162ad811f7e20bcd9c9cd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c4865792a96cc22d632037663fc5ed2 = $(`<div id="html_2c4865792a96cc22d632037663fc5ed2" style="width: 100.0%; height: 100.0%;">Meetstation Hoorn Terschelling: 13.9°C</div>`)[0];
+                popup_a50900428c162ad811f7e20bcd9c9cd3.setContent(html_2c4865792a96cc22d632037663fc5ed2);
+            
+        
+
+        circle_marker_a73210fcdcba06f3bf93ec15d08a50b4.bindPopup(popup_a50900428c162ad811f7e20bcd9c9cd3)
+        ;
+
+        
+    
+    
+            var circle_marker_04f05849e84cc2a088cdbbd2971362ac = L.circleMarker(
+                [51.81, 6.09],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_b8198e20d18333c2eccb323b9863bb54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b6ff0fa07c5b17fcd941298249c14ab = $(`<div id="html_3b6ff0fa07c5b17fcd941298249c14ab" style="width: 100.0%; height: 100.0%;">Meetstation Horst: 14.9°C</div>`)[0];
+                popup_b8198e20d18333c2eccb323b9863bb54.setContent(html_3b6ff0fa07c5b17fcd941298249c14ab);
+            
+        
+
+        circle_marker_04f05849e84cc2a088cdbbd2971362ac.bindPopup(popup_b8198e20d18333c2eccb323b9863bb54)
+        ;
+
+        
+    
+    
+            var circle_marker_c17966477ae0f8e2661c6f13b824fece = L.circleMarker(
+                [52.65, 5.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_de9e6dcc690ed2087622890a9fd04981 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ea4e4d060d2ba3bd74881e4cd89ce54 = $(`<div id="html_2ea4e4d060d2ba3bd74881e4cd89ce54" style="width: 100.0%; height: 100.0%;">Meetstation Houtribdijk: nan°C</div>`)[0];
+                popup_de9e6dcc690ed2087622890a9fd04981.setContent(html_2ea4e4d060d2ba3bd74881e4cd89ce54);
+            
+        
+
+        circle_marker_c17966477ae0f8e2661c6f13b824fece.bindPopup(popup_de9e6dcc690ed2087622890a9fd04981)
+        ;
+
+        
+    
+    
+            var circle_marker_71e1a058fe820ac9793bc83827605b42 = L.circleMarker(
+                [52.47, 4.57],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_6fdd23407a09f912ce8930c641772874 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_682161a83e540951b782f370c76851bf = $(`<div id="html_682161a83e540951b782f370c76851bf" style="width: 100.0%; height: 100.0%;">Meetstation IJmuiden: nan°C</div>`)[0];
+                popup_6fdd23407a09f912ce8930c641772874.setContent(html_682161a83e540951b782f370c76851bf);
+            
+        
+
+        circle_marker_71e1a058fe820ac9793bc83827605b42.bindPopup(popup_6fdd23407a09f912ce8930c641772874)
+        ;
+
+        
+    
+    
+            var circle_marker_f1df4d9d8164225969225475c5cd0de4 = L.circleMarker(
+                [53.42, 6.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_28be57e245edca331dd333b4b0207887 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a7c0e1ef9ba5baa92976e99524a43b5 = $(`<div id="html_3a7c0e1ef9ba5baa92976e99524a43b5" style="width: 100.0%; height: 100.0%;">Meetstation Lauwersoog: 14.1°C</div>`)[0];
+                popup_28be57e245edca331dd333b4b0207887.setContent(html_3a7c0e1ef9ba5baa92976e99524a43b5);
+            
+        
+
+        circle_marker_f1df4d9d8164225969225475c5cd0de4.bindPopup(popup_28be57e245edca331dd333b4b0207887)
+        ;
+
+        
+    
+    
+            var circle_marker_5f7592f78c2fcd75e3938b30dafdbbc3 = L.circleMarker(
+                [53.22, 5.77],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_2395c944ed501a7c13ef57c95b1e9ca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32ce681cbaaa846090a357b3097176d0 = $(`<div id="html_32ce681cbaaa846090a357b3097176d0" style="width: 100.0%; height: 100.0%;">Meetstation Leeuwarden: 13.8°C</div>`)[0];
+                popup_2395c944ed501a7c13ef57c95b1e9ca7.setContent(html_32ce681cbaaa846090a357b3097176d0);
+            
+        
+
+        circle_marker_5f7592f78c2fcd75e3938b30dafdbbc3.bindPopup(popup_2395c944ed501a7c13ef57c95b1e9ca7)
+        ;
+
+        
+    
+    
+            var circle_marker_41b11b55bb3ab4965a798adde66ef257 = L.circleMarker(
+                [52.45, 5.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_72420eedabfe1ff996071557977e73ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4869d21b69845d8b6a843cf264567fb3 = $(`<div id="html_4869d21b69845d8b6a843cf264567fb3" style="width: 100.0%; height: 100.0%;">Meetstation Lelystad: 14.2°C</div>`)[0];
+                popup_72420eedabfe1ff996071557977e73ea.setContent(html_4869d21b69845d8b6a843cf264567fb3);
+            
+        
+
+        circle_marker_41b11b55bb3ab4965a798adde66ef257.bindPopup(popup_72420eedabfe1ff996071557977e73ea)
+        ;
+
+        
+    
+    
+            var circle_marker_7350b9c4730ed5c7bbc8892189fa9421 = L.circleMarker(
+                [51.97, 4.93],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_a4f91ce0856d06e27964b02f2a552f59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bb5c89ab051b0f1446dc48322906ca9 = $(`<div id="html_3bb5c89ab051b0f1446dc48322906ca9" style="width: 100.0%; height: 100.0%;">Meetstation Lopik-Cabauw: 14.6°C</div>`)[0];
+                popup_a4f91ce0856d06e27964b02f2a552f59.setContent(html_3bb5c89ab051b0f1446dc48322906ca9);
+            
+        
+
+        circle_marker_7350b9c4730ed5c7bbc8892189fa9421.bindPopup(popup_a4f91ce0856d06e27964b02f2a552f59)
+        ;
+
+        
+    
+    
+            var circle_marker_be3a6d2a02a62c27f23239c4573212bf = L.circleMarker(
+                [50.92, 5.78],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_5d118c65241c022b1eea916ce22b14f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8096274be523d5ba55bd08c2ee604632 = $(`<div id="html_8096274be523d5ba55bd08c2ee604632" style="width: 100.0%; height: 100.0%;">Meetstation Maastricht: 15.0°C</div>`)[0];
+                popup_5d118c65241c022b1eea916ce22b14f1.setContent(html_8096274be523d5ba55bd08c2ee604632);
+            
+        
+
+        circle_marker_be3a6d2a02a62c27f23239c4573212bf.bindPopup(popup_5d118c65241c022b1eea916ce22b14f1)
+        ;
+
+        
+    
+    
+            var circle_marker_94c90c09d8bf07d6bd0ec89fc4f7ae18 = L.circleMarker(
+                [52.7, 5.88],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_159aaaaf718df8144c0cbd3e9433b21d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76128ba07df6b1b23f0113845ce731a0 = $(`<div id="html_76128ba07df6b1b23f0113845ce731a0" style="width: 100.0%; height: 100.0%;">Meetstation Marknesse: 14.3°C</div>`)[0];
+                popup_159aaaaf718df8144c0cbd3e9433b21d.setContent(html_76128ba07df6b1b23f0113845ce731a0);
+            
+        
+
+        circle_marker_94c90c09d8bf07d6bd0ec89fc4f7ae18.bindPopup(popup_159aaaaf718df8144c0cbd3e9433b21d)
+        ;
+
+        
+    
+    
+            var circle_marker_f615d1b97fdb182040bf88a057fde772 = L.circleMarker(
+                [53.2, 7.15],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_0cf61dfec3529a54cb27f8e4ecc42565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11d146f463742a8b1051d2fbd6d7a453 = $(`<div id="html_11d146f463742a8b1051d2fbd6d7a453" style="width: 100.0%; height: 100.0%;">Meetstation Nieuw Beerta: 14.7°C</div>`)[0];
+                popup_0cf61dfec3529a54cb27f8e4ecc42565.setContent(html_11d146f463742a8b1051d2fbd6d7a453);
+            
+        
+
+        circle_marker_f615d1b97fdb182040bf88a057fde772.bindPopup(popup_0cf61dfec3529a54cb27f8e4ecc42565)
+        ;
+
+        
+    
+    
+            var circle_marker_2f41ac903d8436278fc68d27c93be8fc = L.circleMarker(
+                [51.95, 4.45],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_30ac8498a45d6969a1e6adccf8e0b240 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aea1c7aa4aadb36f6e9c50509e54d7bf = $(`<div id="html_aea1c7aa4aadb36f6e9c50509e54d7bf" style="width: 100.0%; height: 100.0%;">Meetstation Rotterdam: 14.6°C</div>`)[0];
+                popup_30ac8498a45d6969a1e6adccf8e0b240.setContent(html_aea1c7aa4aadb36f6e9c50509e54d7bf);
+            
+        
+
+        circle_marker_2f41ac903d8436278fc68d27c93be8fc.bindPopup(popup_30ac8498a45d6969a1e6adccf8e0b240)
+        ;
+
+        
+    
+    
+            var circle_marker_dc87c3cbf0631b666c77ca8c616f9ccb = L.circleMarker(
+                [51.88, 4.32],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_56e26f8015574d92931e99119dabbaca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cb9b98bfbeb3b34964d47319a6e1676 = $(`<div id="html_8cb9b98bfbeb3b34964d47319a6e1676" style="width: 100.0%; height: 100.0%;">Meetstation Rotterdam Geulhaven: nan°C</div>`)[0];
+                popup_56e26f8015574d92931e99119dabbaca.setContent(html_8cb9b98bfbeb3b34964d47319a6e1676);
+            
+        
+
+        circle_marker_dc87c3cbf0631b666c77ca8c616f9ccb.bindPopup(popup_56e26f8015574d92931e99119dabbaca)
+        ;
+
+        
+    
+    
+            var circle_marker_6df95b7ae85e5e97c56cd7706f8c4aa1 = L.circleMarker(
+                [52.3, 4.77],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_5bd81f19d2f15c8fbadd32fe27eb39e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8650653cfcc404000507f79339e3c1ea = $(`<div id="html_8650653cfcc404000507f79339e3c1ea" style="width: 100.0%; height: 100.0%;">Meetstation Schiphol: 13.5°C</div>`)[0];
+                popup_5bd81f19d2f15c8fbadd32fe27eb39e7.setContent(html_8650653cfcc404000507f79339e3c1ea);
+            
+        
+
+        circle_marker_6df95b7ae85e5e97c56cd7706f8c4aa1.bindPopup(popup_5bd81f19d2f15c8fbadd32fe27eb39e7)
+        ;
+
+        
+    
+    
+            var circle_marker_dd5b63c05994dd05445a203fad2fc3d1 = L.circleMarker(
+                [52.88, 5.38],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_6d4ace5a3f06ceb4fb852f917e7d7bf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d259fa1dff92bca9931ed29cc8e7fa47 = $(`<div id="html_d259fa1dff92bca9931ed29cc8e7fa47" style="width: 100.0%; height: 100.0%;">Meetstation Stavoren: 14.5°C</div>`)[0];
+                popup_6d4ace5a3f06ceb4fb852f917e7d7bf5.setContent(html_d259fa1dff92bca9931ed29cc8e7fa47);
+            
+        
+
+        circle_marker_dd5b63c05994dd05445a203fad2fc3d1.bindPopup(popup_6d4ace5a3f06ceb4fb852f917e7d7bf5)
+        ;
+
+        
+    
+    
+            var circle_marker_9548d5e144bb74816270b74cb6da6d3d = L.circleMarker(
+                [53.0, 4.75],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_4feb888524e2ef1aad768d7e12e864c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29cb150a0ba0bafca55bf2c64dfee0ef = $(`<div id="html_29cb150a0ba0bafca55bf2c64dfee0ef" style="width: 100.0%; height: 100.0%;">Meetstation Texelhors: nan°C</div>`)[0];
+                popup_4feb888524e2ef1aad768d7e12e864c3.setContent(html_29cb150a0ba0bafca55bf2c64dfee0ef);
+            
+        
+
+        circle_marker_9548d5e144bb74816270b74cb6da6d3d.bindPopup(popup_4feb888524e2ef1aad768d7e12e864c3)
+        ;
+
+        
+    
+    
+            var circle_marker_9018595a8a2c7e2116a9acebff59f34e = L.circleMarker(
+                [52.27, 6.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_910f381c02df26bbfd6a19fadbfb5df1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_306bdd96dc9b4cf95634968f8067ff23 = $(`<div id="html_306bdd96dc9b4cf95634968f8067ff23" style="width: 100.0%; height: 100.0%;">Meetstation Twente: 14.6°C</div>`)[0];
+                popup_910f381c02df26bbfd6a19fadbfb5df1.setContent(html_306bdd96dc9b4cf95634968f8067ff23);
+            
+        
+
+        circle_marker_9018595a8a2c7e2116a9acebff59f34e.bindPopup(popup_910f381c02df26bbfd6a19fadbfb5df1)
+        ;
+
+        
+    
+    
+            var circle_marker_7163179fa27bb8f3e1d41f75ddbfad19 = L.circleMarker(
+                [51.45, 3.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_14c241848b73008e8905e14a331271e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_168955053de1ec62a09b8d293cb60612 = $(`<div id="html_168955053de1ec62a09b8d293cb60612" style="width: 100.0%; height: 100.0%;">Meetstation Vlissingen: 14.9°C</div>`)[0];
+                popup_14c241848b73008e8905e14a331271e0.setContent(html_168955053de1ec62a09b8d293cb60612);
+            
+        
+
+        circle_marker_7163179fa27bb8f3e1d41f75ddbfad19.bindPopup(popup_14c241848b73008e8905e14a331271e0)
+        ;
+
+        
+    
+    
+            var circle_marker_2caf15e281974436e8a084f6728e499e = L.circleMarker(
+                [51.65, 5.7],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_7c002ceafb821e1b0a65da49dcace34a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_064d4cf2f6371b4521ea5f8f25970d64 = $(`<div id="html_064d4cf2f6371b4521ea5f8f25970d64" style="width: 100.0%; height: 100.0%;">Meetstation Volkel: 14.7°C</div>`)[0];
+                popup_7c002ceafb821e1b0a65da49dcace34a.setContent(html_064d4cf2f6371b4521ea5f8f25970d64);
+            
+        
+
+        circle_marker_2caf15e281974436e8a084f6728e499e.bindPopup(popup_7c002ceafb821e1b0a65da49dcace34a)
+        ;
+
+        
+    
+    
+            var circle_marker_532eba570f6c536abe2dfd3fbfb2292f = L.circleMarker(
+                [52.12, 4.43],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_fe3e3c1f0c9dc8192592a7c2049a8fa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_905b10c171414869e438b7c08c213838 = $(`<div id="html_905b10c171414869e438b7c08c213838" style="width: 100.0%; height: 100.0%;">Meetstation Voorschoten: 12.5°C</div>`)[0];
+                popup_fe3e3c1f0c9dc8192592a7c2049a8fa9.setContent(html_905b10c171414869e438b7c08c213838);
+            
+        
+
+        circle_marker_532eba570f6c536abe2dfd3fbfb2292f.bindPopup(popup_fe3e3c1f0c9dc8192592a7c2049a8fa9)
+        ;
+
+        
+    
+    
+            var circle_marker_be646f5aa5bab281767d92fb0e5ee0da = L.circleMarker(
+                [51.23, 3.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_5df127dec40743846d3a3e96740f7eca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a44bb4944c4d60909a9642363c160e6 = $(`<div id="html_3a44bb4944c4d60909a9642363c160e6" style="width: 100.0%; height: 100.0%;">Meetstation Westdorpe: 15.1°C</div>`)[0];
+                popup_5df127dec40743846d3a3e96740f7eca.setContent(html_3a44bb4944c4d60909a9642363c160e6);
+            
+        
+
+        circle_marker_be646f5aa5bab281767d92fb0e5ee0da.bindPopup(popup_5df127dec40743846d3a3e96740f7eca)
+        ;
+
+        
+    
+    
+            var circle_marker_355b8cdff0314789bdd846bd5343910e = L.circleMarker(
+                [52.63, 5.17],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_aceade0d6d70e945afe780a50e293cab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05f186e4cff99c3a4e8442e1c9eb6d6b = $(`<div id="html_05f186e4cff99c3a4e8442e1c9eb6d6b" style="width: 100.0%; height: 100.0%;">Meetstation Wijdenes: nan°C</div>`)[0];
+                popup_aceade0d6d70e945afe780a50e293cab.setContent(html_05f186e4cff99c3a4e8442e1c9eb6d6b);
+            
+        
+
+        circle_marker_355b8cdff0314789bdd846bd5343910e.bindPopup(popup_aceade0d6d70e945afe780a50e293cab)
+        ;
+
+        
+    
+    
+            var circle_marker_ab9272b7f037ebc6d70ff379b1184b53 = L.circleMarker(
+                [52.5, 4.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_f772b07b13201246f4d3002ecd95d873 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_086a98a43bdef0e4355b729f81658a44 = $(`<div id="html_086a98a43bdef0e4355b729f81658a44" style="width: 100.0%; height: 100.0%;">Meetstation Wijk aan Zee: 14.5°C</div>`)[0];
+                popup_f772b07b13201246f4d3002ecd95d873.setContent(html_086a98a43bdef0e4355b729f81658a44);
+            
+        
+
+        circle_marker_ab9272b7f037ebc6d70ff379b1184b53.bindPopup(popup_f772b07b13201246f4d3002ecd95d873)
+        ;
+
+        
+    
+    
+            var circle_marker_69b1426e4c3bc9bad659df48fdb506a8 = L.circleMarker(
+                [51.45, 4.33],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_79cd1e313c68d3b833dcb9f2322b8e92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49f6a24fe1f98f039bd44177f50bddc8 = $(`<div id="html_49f6a24fe1f98f039bd44177f50bddc8" style="width: 100.0%; height: 100.0%;">Meetstation Woensdrecht: 14.9°C</div>`)[0];
+                popup_79cd1e313c68d3b833dcb9f2322b8e92.setContent(html_49f6a24fe1f98f039bd44177f50bddc8);
+            
+        
+
+        circle_marker_69b1426e4c3bc9bad659df48fdb506a8.bindPopup(popup_79cd1e313c68d3b833dcb9f2322b8e92)
+        ;
+
+        
+    
+    
+            var circle_marker_90e2bea71062cc942132974de61a8b78 = L.circleMarker(
+                [54.85, 4.73],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ba6337108e24812a76e33054f1a52ee8);
+        
+    
+        var popup_ff7d5de1fe98136479cd85d05cdac9e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ba1b3bffac8f11d9773dc63c3e8fb10 = $(`<div id="html_9ba1b3bffac8f11d9773dc63c3e8fb10" style="width: 100.0%; height: 100.0%;">Meetstation Zeeplatform F-3: 12.9°C</div>`)[0];
+                popup_ff7d5de1fe98136479cd85d05cdac9e3.setContent(html_9ba1b3bffac8f11d9773dc63c3e8fb10);
+            
+        
+
+        circle_marker_90e2bea71062cc942132974de61a8b78.bindPopup(popup_ff7d5de1fe98136479cd85d05cdac9e3)
+        ;
+
+        
+    
+</script>
+</html>
